@@ -14,7 +14,7 @@ from styles import btn_params, header_font, title_font
 def make_step_frame(parent, text):
     frame = tk.Frame(
         parent,
-        bg="#fadee3",
+        bg="#ffe5ea",  
         bd=2,
         relief="ridge",
         padx=2,
@@ -22,26 +22,25 @@ def make_step_frame(parent, text):
     )
     label = tk.Label(
         frame,
-        text=text + " 🍉",
+        text=text + " ❤ ",
         font=header_font,
-        fg="#143b3b",
-        bg="#fadee3"
+        fg="#064444",  
+        bg="#fce7eb"
     )
     label.pack(anchor="w", pady=(0, 1))
     return frame
 
 def create_main_window():
     window = tk.Tk()
-    window.title("🍉 Subarashii Melon 🍉")
-    window.geometry("400x500")
-    window.configure(bg="#EDFCA6")
-
+    window.title(" Cool Coco 🥥")
+    window.geometry("400x480")
+    window.configure(bg="#ebfac8")  
     tk.Label(
         window,
-        text="🍉 Eecamg Watermelon",
+        text=" Eccang TP Lite",
         font=title_font,
-        fg="#072020",
-        bg="#EDFCA6"
+        fg="#022424",  
+        bg="#ebfac8"
     ).pack(pady=6)
 
     # Step 1
